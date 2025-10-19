@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e0fbff"/>
+      <stop offset="1" stop-color="#f3feff"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b7eef5"/>
+      <stop offset="1" stop-color="#7cd3e0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="420" fill="url(#g)"/>
+  <rect y="360" width="1200" height="60" fill="#d6f2f6"/>
+  <g fill="#22b6c9" opacity="0.2">
+    <rect x="80" y="180" width="220" height="180" rx="8"/>
+    <rect x="320" y="140" width="260" height="220" rx="8"/>
+    <rect x="600" y="120" width="280" height="240" rx="8"/>
+    <rect x="900" y="160" width="220" height="200" rx="8"/>
+  </g>
+  <g fill="#b7eef5" opacity="0.9">
+    <rect x="100" y="200" width="180" height="18" rx="4"/>
+    <rect x="100" y="228" width="180" height="18" rx="4"/>
+    <rect x="100" y="256" width="180" height="18" rx="4"/>
+    <rect x="100" y="284" width="180" height="18" rx="4"/>
+    <rect x="100" y="312" width="180" height="18" rx="4"/>
+    <rect x="340" y="160" width="220" height="22" rx="5"/>
+    <rect x="340" y="190" width="220" height="22" rx="5"/>
+    <rect x="340" y="220" width="220" height="22" rx="5"/>
+    <rect x="340" y="250" width="220" height="22" rx="5"/>
+    <rect x="340" y="280" width="220" height="22" rx="5"/>
+    <rect x="620" y="140" width="240" height="24" rx="6"/>
+    <rect x="620" y="174" width="240" height="24" rx="6"/>
+    <rect x="620" y="208" width="240" height="24" rx="6"/>
+    <rect x="620" y="242" width="240" height="24" rx="6"/>
+    <rect x="620" y="276" width="240" height="24" rx="6"/>
+    <rect x="620" y="310" width="240" height="24" rx="6"/>
+    <rect x="920" y="180" width="180" height="22" rx="5"/>
+    <rect x="920" y="212" width="180" height="22" rx="5"/>
+    <rect x="920" y="244" width="180" height="22" rx="5"/>
+    <rect x="920" y="276" width="180" height="22" rx="5"/>
+    <rect x="920" y="308" width="180" height="22" rx="5"/>
+  </g>
+</svg>

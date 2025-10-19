@@ -1,0 +1,69 @@
+
+* { box-sizing: border-box; }
+:root{
+  --hdl-teal: #22b6c9;
+  --hdl-teal-dark: #0a8ea0;
+  --ink:#132029;
+  --muted:#637381;
+  --card:#ffffff;
+  --border:#e5e7eb;
+  --bg:#f5f7fb;
+  --ring: rgba(34,182,201,.3);
+  --accent:#f2a900;
+}
+html,body{margin:0;padding:0;font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;color:var(--ink);background:#f5f7fb;}
+.container{max-width:980px;margin:0 auto;padding:1rem;}
+.hdl-header{background:#fff;border-bottom:1px solid var(--border);}
+.hdl-header .head{display:flex;align-items:center;gap:.75rem;}
+.hdl-logo{height:34px;width:auto}
+.brand{display:flex;flex-direction:column}
+.brand-title{color:var(--ink);font-weight:800;font-size:1.1rem;line-height:1.2}
+.tag{font-size:.85rem;color:var(--muted);font-weight:600}
+.hdl-footer{background:#fff;border-top:1px solid var(--border);margin-top:2rem;}
+.small{font-size:.9rem}.muted{color:var(--muted)}
+.view{display:none;animation:fade .2s ease-in;}
+.view.active{display:block;}
+@keyframes fade{from{opacity:.8;transform:translateY(4px)}to{opacity:1;transform:none}}
+.hdl-gradient{background:linear-gradient(135deg,#e0fbff,#f3feff);border:1px solid #d6f2f6;}
+.hero{padding:1rem 1.2rem;border-radius:1rem}
+.hero-photo{position:relative;background-image:url('assets/hdl-hero.svg');background-size:cover;background-position:center;border:1px solid #d6f2f6;border-radius:1rem;overflow:hidden;min-height:220px}
+.hero-photo .hero-overlay{background:linear-gradient(90deg, rgba(255,255,255,.8), rgba(255,255,255,.35));padding:1.2rem;max-width:620px}
+.lead{color:#334155}
+.card{background:var(--card);border:1px solid var(--border);border-radius:.9rem;padding:1rem;}
+.stack{display:grid;gap:1rem;}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem;}
+.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem;}
+@media(max-width:720px){.grid-2,.grid-3{grid-template-columns:1fr}}
+.form{display:grid;gap:1rem;}
+.form-label{font-weight:600;margin-bottom:.25rem;display:block}
+input[type=text],input[type=number],select,textarea{width:100%;padding:.6rem .7rem;border:1px solid #d1d5db;border-radius:.6rem;background:#fff}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--hdl-teal);box-shadow:0 0 0 4px var(--ring)}
+fieldset{border:1px solid var(--border);border-radius:.7rem;padding:.75rem}
+legend{padding:0 .4rem;font-weight:600}
+.form-actions{display:flex;gap:.6rem;justify-content:flex-end}
+.btn-primary,.btn-ghost,button{appearance:none;border-radius:.6rem;padding:.6rem .9rem;border:1px solid transparent;cursor:pointer;font-weight:700}
+.btn-primary{background:var(--hdl-teal);color:#fff}
+.btn-primary:hover{background:#39c7d8}
+.btn-ghost{background:#fff;border-color:var(--border);color:#111}
+.btn-ghost:hover{background:#f3f4f6}
+.hidden{display:none}
+.small{font-size:.9rem}
+
+dialog{border:none;border-radius:1rem;padding:0;width:min(680px,95vw)}
+dialog::backdrop{background:rgba(0,0,0,.35)}
+.dlg-head{padding:1rem 1.2rem;border-bottom:1px solid #d6f2f6;border-top-left-radius:1rem;border-top-right-radius:1rem}
+.dlg-body{padding:1rem 1.2rem;display:grid;gap:1rem}
+.dlg-actions{display:flex;gap:.6rem;justify-content:flex-end;padding:0 1.2rem 1rem}
+
+.box{background:#fff;border:1px solid var(--border);border-radius:.9rem;padding:1rem}
+.box h3{margin:.2rem 0 .6rem}
+.badge{display:inline-block;padding:.25rem .5rem;border-radius:.5rem;background:#ecfeff;border:1px solid #bae6fd;color:#036b7a;font-weight:700;font-size:.85rem}
+.note{color:#64748b;font-size:.9rem;margin-top:.5rem}
+
+.doctor-card{display:grid;grid-template-columns:56px 1fr auto;gap:1rem;align-items:center;border:1px solid var(--border);background:#fff;border-radius:.9rem;padding:.7rem .9rem}
+.doctor-photo{width:56px;height:56px;border-radius:50%;background:#22b6c9;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800}
+.doctor-name{font-weight:700;}
+.doctor-spec{color:#0b6473;font-weight:700}
+.doctor-meta{color:#475569;font-size:.95rem}
+.btn-marcar{background:#fff;border:2px solid var(--accent);color:#111;padding:.45rem .9rem;border-radius:999px;font-weight:700}
+.btn-marcar:hover{background:#fff8e1}
